@@ -1,0 +1,293 @@
+{
+	"hour": {
+		"top_talkers": [
+						{
+						"username": "talker1",
+						"posts": 100
+						},
+						{
+						"username": "talker2",
+						"posts": 99
+						},
+						{
+						"username": "talker3",
+						"posts": 88
+						},
+						{
+						"username": "talker4",
+						"posts": 77
+						},
+						{
+						"username": "talker5",
+						"posts": 66
+						}
+						],
+		"top_mentions": [
+						 {
+						 "username": "mention1",
+						 "posts": 100
+						 },
+						 {
+						 "username": "mention2",
+						 "posts": 99
+						 },
+						 {
+						 "username": "mention3",
+						 "posts": 88
+						 },
+						 {
+						 "username": "mention4",
+						 "posts": 77
+						 },
+						 {
+						 "username": "mention5",
+						 "posts": 66
+						 }
+						 ],
+		"top_hashtags": [
+						 {
+						 "username": "hashtag1",
+						 "posts": 100
+						 },
+						 {
+						 "username": "hashtag2",
+						 "posts": 99
+						 },
+						 {
+						 "username": "hashtag3",
+						 "posts": 88
+						 },
+						 {
+						 "username": "hashtag4",
+						 "posts": 77
+						 },
+						 {
+						 "username": "hashtag5",
+						 "posts": 66
+						 }
+						 ],
+		"top_posts": [
+					  {
+					  "id": 1,
+					  "username": "user1",
+					  "post": "post 1"
+					  },
+					  {
+					  "id": 2,
+					  "username": "user2",
+					  "post": "post 2"
+					  },
+					  {
+					  "id": 3,
+					  "username": "user3",
+					  "post": "post 3"
+					  },
+					  {
+					  "id": 4,
+					  "username": "user4",
+					  "post": "post 4"
+					  },
+					  {
+					  "id": 5,
+					  "username": "user5",
+					  "post": "post 5"
+					  }
+					  ],
+		"post_count": 1234,
+		"post_length": 99.9,
+		"unique_users": 555,
+		"sources": [
+					{
+					"id": 1,
+					"source": "source 1",
+					"posts": 100
+					},
+					{
+					"id": 1,
+					"source": "source 2",
+					"posts": 99
+					},
+					{
+					"id": 1,
+					"source": "source 3",
+					"posts": 98
+					},
+					{
+					"id": 1,
+					"source": "source 4",
+					"posts": 97
+					},
+					{
+					"id": 1,
+					"source": "source 5",
+					"posts": 96
+					},
+					{
+					"id": 1,
+					"source": "source 6",
+					"posts": 95
+					},
+					{
+					"id": 1,
+					"source": "source 7",
+					"posts": 94
+					},
+					{
+					"id": 1,
+					"source": "source 8",
+					"posts": 93
+					},
+					{
+					"id": 1,
+					"source": "source 9",
+					"posts": 92
+					}
+					]
+	},
+	"day": {
+		"top_talkers": [
+						{
+						"username": "talker1",
+						"posts": 100
+						},
+						{
+						"username": "talker2",
+						"posts": 99
+						},
+						{
+						"username": "talker3",
+						"posts": 88
+						},
+						{
+						"username": "talker4",
+						"posts": 77
+						},
+						{
+						"username": "talker5",
+						"posts": 66
+						}
+						],
+		"top_mentions": [
+						 {
+						 "username": "mention1",
+						 "posts": 100
+						 },
+						 {
+						 "username": "mention2",
+						 "posts": 99
+						 },
+						 {
+						 "username": "mention3",
+						 "posts": 88
+						 },
+						 {
+						 "username": "mention4",
+						 "posts": 77
+						 },
+						 {
+						 "username": "mention5",
+						 "posts": 66
+						 }
+						 ],
+		"top_hashtags": [
+						 {
+						 "username": "hashtag1",
+						 "posts": 100
+						 },
+						 {
+						 "username": "hashtag2",
+						 "posts": 99
+						 },
+						 {
+						 "username": "hashtag3",
+						 "posts": 88
+						 },
+						 {
+						 "username": "hashtag4",
+						 "posts": 77
+						 },
+						 {
+						 "username": "hashtag5",
+						 "posts": 66
+						 }
+						 ],
+		"top_posts": [
+					  {
+					  "id": 1,
+					  "username": "user1",
+					  "post": "post 1"
+					  },
+					  {
+					  "id": 2,
+					  "username": "user2",
+					  "post": "post 2"
+					  },
+					  {
+					  "id": 3,
+					  "username": "user3",
+					  "post": "post 3"
+					  },
+					  {
+					  "id": 4,
+					  "username": "user4",
+					  "post": "post 4"
+					  },
+					  {
+					  "id": 5,
+					  "username": "user5",
+					  "post": "post 5"
+					  }
+					  ],
+		"post_count": 1234,
+		"post_length": 99.9,
+		"unique_users": 555,
+		"sources": [
+					{
+					"id": 1,
+					"source": "source 1",
+					"posts": 100
+					},
+					{
+					"id": 1,
+					"source": "source 2",
+					"posts": 99
+					},
+					{
+					"id": 1,
+					"source": "source 3",
+					"posts": 98
+					},
+					{
+					"id": 1,
+					"source": "source 4",
+					"posts": 97
+					},
+					{
+					"id": 1,
+					"source": "source 5",
+					"posts": 96
+					},
+					{
+					"id": 1,
+					"source": "source 6",
+					"posts": 95
+					},
+					{
+					"id": 1,
+					"source": "source 7",
+					"posts": 94
+					},
+					{
+					"id": 1,
+					"source": "source 8",
+					"posts": 93
+					},
+					{
+					"id": 1,
+					"source": "source 9",
+					"posts": 92
+					}
+					]
+	},
+	"updated": 1370727122
+}
