@@ -145,23 +145,23 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="YKd-kc-oby">
-                                <rect key="frame" x="0.0" y="-68" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Loading App.Net Stats..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PQ7-qc-f4B">
-                                        <rect key="frame" x="20" y="236" width="280" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="20" y="165" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="kV2-NW-NNT">
-                                        <rect key="frame" x="142" y="274" width="37" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="142" y="203" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </activityIndicatorView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5ro-F5-2VK">
-                                        <rect key="frame" x="128" y="274" width="65" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="128" y="203" width="65" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -190,7 +190,7 @@
                         <outlet property="loadingActivityIndicator" destination="kV2-NW-NNT" id="4BW-OP-lMZ"/>
                         <outlet property="loadingLabel" destination="PQ7-qc-f4B" id="h4w-Th-weQ"/>
                         <outlet property="loadingView" destination="YKd-kc-oby" id="gTd-Zh-EQ9"/>
-                        <outlet property="loginButton" destination="YKd-kc-oby" id="LHL-sA-7lw"/>
+                        <outlet property="loginButton" destination="5ro-F5-2VK" id="obB-YI-WKu"/>
                         <outlet property="numberOfPostsLastDayLabel" destination="gUL-cD-sdm" id="NuU-34-jj4"/>
                         <outlet property="numberOfPostsLastHourLabel" destination="8Sg-po-LVl" id="tEA-I5-Mjm"/>
                         <outlet property="numberOfUsersLastDayLabel" destination="w6N-CZ-kq2" id="ksp-2u-aNI"/>
@@ -508,59 +508,6 @@
         <image name="clock.png" width="29" height="30"/>
         <image name="refresh.png" width="49" height="49"/>
     </resources>
-    <classes>
-        <class className="ADNAuthenticationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ADNAuthenticationViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancelAuthentication:"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="ADNTopPostTableViewCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ADNTopPostTableViewCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="avatarImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="postLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="usernameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ADNTopTableViewCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ADNTopTableViewCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="numberLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ADNTopTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ADNTopTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="selectedSliceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="sourcesPieChart" candidateClass="XYPieChart"/>
-            </relationships>
-        </class>
-        <class className="ADNViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ADNViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="refreshStats"/>
-                <relationship kind="outlet" name="averageMessageLengthLastDayLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="averageMessageLengthLastDayProgressView" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="averageMessageLengthLastHourLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="averageMessageLengthLastHourProgressView" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="lastUpdateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="loadingActivityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="loadingLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="loadingView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="loginButton" candidateClass="UIView"/>
-                <relationship kind="outlet" name="numberOfPostsLastDayLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="numberOfPostsLastHourLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="numberOfUsersLastDayLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="numberOfUsersLastHourLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="XYPieChart" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/XYPieChart.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -72,6 +72,8 @@
 		[self.loadingLabel setText:NSLocalizedString(@"You must be logged in", nil)];
 	}
 	else {
+		[self.averageMessageLengthLastHourProgressView setProgress:0.0 animated:NO];
+		[self.averageMessageLengthLastDayProgressView setProgress:0.0 animated:NO];
 		[self.loginButton setAlpha:0.0];
 		[self.loadingActivityIndicator startAnimating];
 		[self.loadingLabel setText:NSLocalizedString(@"Loading App.Net stats...", nil)];
