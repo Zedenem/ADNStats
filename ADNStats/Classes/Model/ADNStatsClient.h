@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AppDotNet/AFHTTPClient.h>
 
 // Notifications
 #define ADNStatsClientGetStatsNotification @"ADNStatsClientGetStatsNotification"
@@ -14,7 +15,7 @@
 
 @class ADNStatsSummary;
 
-@interface ADNStatsClient : NSObject
+@interface ADNStatsClient : AFHTTPClient
 
 #pragma mark Properties
 @property (strong, nonatomic) ADNStatsSummary *statsSummary;

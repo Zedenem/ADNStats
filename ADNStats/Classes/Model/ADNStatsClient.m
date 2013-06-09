@@ -21,7 +21,7 @@
     static ADNStatsClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[ADNStatsClient alloc] init];
+        _sharedClient = [[ADNStatsClient alloc] initWithBaseURL:nil];
     });
     
     return _sharedClient;
