@@ -4,3 +4,6 @@
 [submodule "dependencies/AppDotNet"]
 	path = dependencies/AppDotNet
 	url = https://github.com/mattrubin/AppDotNet.git
+[submodule "Server/Libraries/AppDotNetPHP"]
+	path = Server/Libraries/AppDotNetPHP
+	url = git@github.com:DaveWoodCom/AppDotNetPHP.git
