@@ -11,6 +11,7 @@
 @class ADNTopObject;
 @class ADNTopPost;
 @class ADNTopSource;
+@class ADNTopHashtag;
 
 @interface ADNStatsPanel : NSObject
 

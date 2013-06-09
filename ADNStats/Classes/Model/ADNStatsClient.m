@@ -10,6 +10,7 @@
 
 // Frameworks
 #import <SBJson/SBJson.h>
+#import <AppDotNet/AFJSONRequestOperation.h>
 
 // Model
 #import "ADNStatsSummary.h"
@@ -21,7 +22,7 @@
     static ADNStatsClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[ADNStatsClient alloc] initWithBaseURL:nil];
+        _sharedClient = [[ADNStatsClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://appnetstats.cerebralgardens.com/"]];
     });
     
     return _sharedClient;
@@ -29,22 +30,19 @@
 
 #pragma mark Retrieving Stats
 - (void)getStatsWithCompletionHandler:(void (^)(ADNStatsSummary *statsSummary, NSError *error))completionHandler {
-	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-		NSString *path = [[NSBundle mainBundle] pathForResource:@"example" ofType:@"json"];
-		NSDictionary *statsDictionary = nil;
-		if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-			SBJsonParser *parser = [[SBJsonParser alloc] init];
-			statsDictionary = [parser objectWithData:[NSData dataWithContentsOfFile:path]];
-		}
-		dispatch_async(dispatch_get_main_queue(), ^{
-			self.statsSummary = [[ADNStatsSummary alloc] initWithJsonDictionary:statsDictionary];
-			[[NSNotificationCenter defaultCenter] postNotificationName:ADNStatsClientGetStatsNotification
-																object:nil
-															  userInfo:[NSDictionary dictionaryWithObject:self.statsSummary
-																								   forKey:ADNStatsClientGetStatsNotification_userInfo_StatsSummary]];
-			completionHandler(self.statsSummary, nil);
-		});
-	});
+	AFJSONRequestOperation *requestOperation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[self requestWithMethod:@"GET" path:@"demo.json" parameters:nil]
+																							   success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+																								   self.statsSummary = [[ADNStatsSummary alloc] initWithJsonDictionary:JSON];
+																								   [[NSNotificationCenter defaultCenter] postNotificationName:ADNStatsClientGetStatsNotification
+																																					   object:nil
+																																					 userInfo:[NSDictionary dictionaryWithObject:self.statsSummary
+																																														  forKey:ADNStatsClientGetStatsNotification_userInfo_StatsSummary]];
+																								   completionHandler(self.statsSummary, nil);
+																							   }
+																							   failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+																								   completionHandler(nil, error);
+																							   }];
+	[requestOperation start];
 }
 
 @end

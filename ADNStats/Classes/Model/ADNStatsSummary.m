@@ -29,7 +29,7 @@
 	if (lastUpdateDate) {
 		NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
 		[dateFormatter setDateStyle:NSDateFormatterShortStyle];
-		[dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+		[dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
 		formattedLastUpdate = [dateFormatter stringFromDate:lastUpdateDate];
 	}
 	

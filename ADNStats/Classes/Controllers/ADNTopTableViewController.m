@@ -96,7 +96,7 @@
 - (void)refreshAvatars {
 	if (self.statsPanel && [ADNClient sharedClient].accessToken) {
 		for (int i = 0; i < [self.statsPanel numberOfTopPosts]; i++) {
-			[[ADNClient sharedClient] getAvatarImageForUser:[self.statsPanel topPostAtIndex:i].username
+			[[ADNClient sharedClient] getAvatarImageForUser:[NSString stringWithFormat:@"@%@", [self.statsPanel topPostAtIndex:i].username]
 									  withCompletionHandler:^(UIImage *image, ADNMetadata *meta, NSError *error) {
 										  [[self.statsPanel topPostAtIndex:i] setAvatarImage:image];
 										  [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:i inSection:kTopPostsSection]] withRowAnimation:UITableViewRowAnimationAutomatic];

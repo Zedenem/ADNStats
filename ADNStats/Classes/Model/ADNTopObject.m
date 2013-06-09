@@ -8,14 +8,6 @@
 
 #import "ADNTopObject.h"
 
-@interface ADNTopObject ()
-
-#pragma mark Properties
-@property (strong, nonatomic, readwrite) NSString *title;
-@property (assign, nonatomic, readwrite) NSUInteger number;
-
-@end
-
 @implementation ADNTopObject
 
 #pragma mark Instantiation

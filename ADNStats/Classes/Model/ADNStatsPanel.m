@@ -12,6 +12,7 @@
 #import "ADNTopObject.h"
 #import "ADNTopPost.h"
 #import "ADNTopSource.h"
+#import "ADNTopHashtag.h"
 
 @interface ADNStatsPanel ()
 
@@ -79,7 +80,7 @@
 		if (topHashtags) {
 			NSMutableArray *mutableTopHashtags = [NSMutableArray arrayWithCapacity:[topHashtags count]];
 			for (NSDictionary *topHashtag in topHashtags) {
-				[mutableTopHashtags addObject:[[ADNTopObject alloc] initWithJsonDictionary:topHashtag]];
+				[mutableTopHashtags addObject:[[ADNTopHashtag alloc] initWithJsonDictionary:topHashtag]];
 			}
 			self.topHashtags = [NSArray arrayWithArray:mutableTopHashtags];
 		}
@@ -94,7 +95,7 @@
 		}
 		
 		NSUInteger numberOfUnknownSourcesPosts = self.numberOfPosts;
-		NSArray *sources = [jsonDictionary objectForKey:@"sources"];
+		NSArray *sources = [jsonDictionary objectForKey:@"top_sources"];
 		if (sources) {
 			NSMutableArray *mutableTopSources = [NSMutableArray arrayWithCapacity:[sources count]];
 			for (NSDictionary *sourceDictionary in sources) {

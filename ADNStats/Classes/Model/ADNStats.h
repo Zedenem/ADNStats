@@ -13,5 +13,6 @@
 #import "ADNTopObject.h"
 #import "ADNTopPost.h"
 #import "ADNTopSource.h"
+#import "ADNTopHashtag.h"
 
 #define kMaximumMessageLength 256.0

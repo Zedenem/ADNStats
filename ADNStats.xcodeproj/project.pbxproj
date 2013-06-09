@@ -43,6 +43,8 @@
 		5F61E59317641A72005CBE87 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61E59017641A72005CBE87 /* XYPieChart.m */; };
 		5F61E59517641BD0005CBE87 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F61E59417641BD0005CBE87 /* QuartzCore.framework */; };
 		5F61E59817642447005CBE87 /* ADNTopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61E59717642447005CBE87 /* ADNTopSource.m */; };
+		5F61E5B9176432E2005CBE87 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F61E5B8176432E2005CBE87 /* refresh.png */; };
+		5F61E5BC1764373B005CBE87 /* ADNTopHashtag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61E5BB1764373B005CBE87 /* ADNTopHashtag.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +167,9 @@
 		5F61E59417641BD0005CBE87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5F61E59617642446005CBE87 /* ADNTopSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNTopSource.h; sourceTree = "<group>"; };
 		5F61E59717642447005CBE87 /* ADNTopSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNTopSource.m; sourceTree = "<group>"; };
+		5F61E5B8176432E2005CBE87 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		5F61E5BA1764373A005CBE87 /* ADNTopHashtag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNTopHashtag.h; sourceTree = "<group>"; };
+		5F61E5BB1764373B005CBE87 /* ADNTopHashtag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNTopHashtag.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +305,8 @@
 				5F61E56A17640538005CBE87 /* ADNTopPost.m */,
 				5F61E59617642446005CBE87 /* ADNTopSource.h */,
 				5F61E59717642447005CBE87 /* ADNTopSource.m */,
+				5F61E5BA1764373A005CBE87 /* ADNTopHashtag.h */,
+				5F61E5BB1764373B005CBE87 /* ADNTopHashtag.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -326,6 +333,7 @@
 		5F2CF3891763DFA6009A4FC0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5F61E5B8176432E2005CBE87 /* refresh.png */,
 				5F61E56F17640A67005CBE87 /* avatar.png */,
 				5F2CF3A91763F167009A4FC0 /* calendar.png */,
 				5F2CF3AA1763F167009A4FC0 /* binocular.png */,
@@ -501,6 +509,7 @@
 				5F61E57017640A67005CBE87 /* avatar.png in Resources */,
 				5F61E59117641A72005CBE87 /* LICENSE.txt in Resources */,
 				5F61E59217641A72005CBE87 /* README.textile in Resources */,
+				5F61E5B9176432E2005CBE87 /* refresh.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +534,7 @@
 				5F61E58B17640E43005CBE87 /* ADNAuthenticationViewController.m in Sources */,
 				5F61E59317641A72005CBE87 /* XYPieChart.m in Sources */,
 				5F61E59817642447005CBE87 /* ADNTopSource.m in Sources */,
+				5F61E5BC1764373B005CBE87 /* ADNTopHashtag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
