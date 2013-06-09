@@ -10,16 +10,29 @@
 		5F2CF3421763DD1E009A4FC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2CF3411763DD1E009A4FC0 /* UIKit.framework */; };
 		5F2CF3441763DD1E009A4FC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2CF3431763DD1E009A4FC0 /* Foundation.framework */; };
 		5F2CF3461763DD1E009A4FC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2CF3451763DD1E009A4FC0 /* CoreGraphics.framework */; };
-		5F2CF34C1763DD1E009A4FC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF34A1763DD1E009A4FC0 /* InfoPlist.strings */; };
-		5F2CF34E1763DD1E009A4FC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CF34D1763DD1E009A4FC0 /* main.m */; };
-		5F2CF3521763DD1E009A4FC0 /* ADNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CF3511763DD1E009A4FC0 /* ADNAppDelegate.m */; };
-		5F2CF3541763DD1E009A4FC0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF3531763DD1E009A4FC0 /* Default.png */; };
-		5F2CF3561763DD1E009A4FC0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF3551763DD1E009A4FC0 /* Default@2x.png */; };
-		5F2CF3581763DD1E009A4FC0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF3571763DD1E009A4FC0 /* Default-568h@2x.png */; };
-		5F2CF35B1763DD1E009A4FC0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF3591763DD1E009A4FC0 /* MainStoryboard.storyboard */; };
-		5F2CF35E1763DD1E009A4FC0 /* ADNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CF35D1763DD1E009A4FC0 /* ADNViewController.m */; };
 		5F2CF3761763DDAC009A4FC0 /* libsbjson-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2CF3711763DD91009A4FC0 /* libsbjson-ios.a */; };
-		5F2CF37C1763DE61009A4FC0 /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF37B1763DE61009A4FC0 /* example.json */; };
+		5F2CF3931763DFA6009A4FC0 /* ADNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CF3811763DFA6009A4FC0 /* ADNViewController.m */; };
+		5F2CF3941763DFA6009A4FC0 /* ADNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CF3841763DFA6009A4FC0 /* ADNAppDelegate.m */; };
+		5F2CF3951763DFA6009A4FC0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF3871763DFA6009A4FC0 /* MainStoryboard.storyboard */; };
+		5F2CF3961763DFA6009A4FC0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF38A1763DFA6009A4FC0 /* Default-568h@2x.png */; };
+		5F2CF3971763DFA6009A4FC0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF38B1763DFA6009A4FC0 /* Default.png */; };
+		5F2CF3981763DFA6009A4FC0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF38C1763DFA6009A4FC0 /* Default@2x.png */; };
+		5F2CF3991763DFA6009A4FC0 /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF38D1763DFA6009A4FC0 /* example.json */; };
+		5F2CF39B1763DFA6009A4FC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF3911763DFA6009A4FC0 /* InfoPlist.strings */; };
+		5F2CF39C1763DFA6009A4FC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CF3921763DFA6009A4FC0 /* main.m */; };
+		5F2CF39F1763DFE3009A4FC0 /* ADNStatsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CF39E1763DFE3009A4FC0 /* ADNStatsClient.m */; };
+		5F2CF3A21763E24F009A4FC0 /* ADNStatsSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CF3A11763E24F009A4FC0 /* ADNStatsSummary.m */; };
+		5F2CF3A51763EA3B009A4FC0 /* ADNStatsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CF3A41763EA3B009A4FC0 /* ADNStatsPanel.m */; };
+		5F2CF3AD1763F167009A4FC0 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF3A91763F167009A4FC0 /* calendar.png */; };
+		5F2CF3AE1763F167009A4FC0 /* binocular.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF3AA1763F167009A4FC0 /* binocular.png */; };
+		5F2CF3AF1763F167009A4FC0 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF3AB1763F167009A4FC0 /* share.png */; };
+		5F2CF3B01763F167009A4FC0 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2CF3AC1763F167009A4FC0 /* clock.png */; };
+		5F2CF3B31763F83D009A4FC0 /* ADNTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CF3B21763F83D009A4FC0 /* ADNTopTableViewCell.m */; };
+		5F2CF3B61763F8A9009A4FC0 /* ADNTopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CF3B51763F8A9009A4FC0 /* ADNTopTableViewController.m */; };
+		5F2CF3B91763F9B5009A4FC0 /* ADNTopObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CF3B81763F9B4009A4FC0 /* ADNTopObject.m */; };
+		5F61E56B17640538005CBE87 /* ADNTopPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61E56A17640538005CBE87 /* ADNTopPost.m */; };
+		5F61E56E176407D9005CBE87 /* ADNTopPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61E56D176407D9005CBE87 /* ADNTopPostTableViewCell.m */; };
+		5F61E57017640A67005CBE87 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F61E56F17640A67005CBE87 /* avatar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,20 +78,42 @@
 		5F2CF3411763DD1E009A4FC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5F2CF3431763DD1E009A4FC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5F2CF3451763DD1E009A4FC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5F2CF3491763DD1E009A4FC0 /* ADNStats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ADNStats-Info.plist"; sourceTree = "<group>"; };
-		5F2CF34B1763DD1E009A4FC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5F2CF34D1763DD1E009A4FC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5F2CF34F1763DD1E009A4FC0 /* ADNStats-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADNStats-Prefix.pch"; sourceTree = "<group>"; };
-		5F2CF3501763DD1E009A4FC0 /* ADNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNAppDelegate.h; sourceTree = "<group>"; };
-		5F2CF3511763DD1E009A4FC0 /* ADNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNAppDelegate.m; sourceTree = "<group>"; };
-		5F2CF3531763DD1E009A4FC0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		5F2CF3551763DD1E009A4FC0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		5F2CF3571763DD1E009A4FC0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5F2CF35A1763DD1E009A4FC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		5F2CF35C1763DD1E009A4FC0 /* ADNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNViewController.h; sourceTree = "<group>"; };
-		5F2CF35D1763DD1E009A4FC0 /* ADNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNViewController.m; sourceTree = "<group>"; };
 		5F2CF3651763DD91009A4FC0 /* SBJson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SBJson.xcodeproj; path = dependencies/json/SBJson.xcodeproj; sourceTree = "<group>"; };
-		5F2CF37B1763DE61009A4FC0 /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
+		5F2CF3801763DFA6009A4FC0 /* ADNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNViewController.h; sourceTree = "<group>"; };
+		5F2CF3811763DFA6009A4FC0 /* ADNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNViewController.m; sourceTree = "<group>"; };
+		5F2CF3831763DFA6009A4FC0 /* ADNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNAppDelegate.h; sourceTree = "<group>"; };
+		5F2CF3841763DFA6009A4FC0 /* ADNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNAppDelegate.m; sourceTree = "<group>"; };
+		5F2CF3871763DFA6009A4FC0 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		5F2CF38A1763DFA6009A4FC0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5F2CF38B1763DFA6009A4FC0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5F2CF38C1763DFA6009A4FC0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5F2CF38D1763DFA6009A4FC0 /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
+		5F2CF38F1763DFA6009A4FC0 /* ADNStats-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ADNStats-Info.plist"; sourceTree = "<group>"; };
+		5F2CF3901763DFA6009A4FC0 /* ADNStats-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADNStats-Prefix.pch"; sourceTree = "<group>"; };
+		5F2CF3911763DFA6009A4FC0 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		5F2CF3921763DFA6009A4FC0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F2CF39D1763DFE3009A4FC0 /* ADNStatsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNStatsClient.h; sourceTree = "<group>"; };
+		5F2CF39E1763DFE3009A4FC0 /* ADNStatsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNStatsClient.m; sourceTree = "<group>"; };
+		5F2CF3A01763E24F009A4FC0 /* ADNStatsSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNStatsSummary.h; sourceTree = "<group>"; };
+		5F2CF3A11763E24F009A4FC0 /* ADNStatsSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNStatsSummary.m; sourceTree = "<group>"; };
+		5F2CF3A31763EA3B009A4FC0 /* ADNStatsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNStatsPanel.h; sourceTree = "<group>"; };
+		5F2CF3A41763EA3B009A4FC0 /* ADNStatsPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNStatsPanel.m; sourceTree = "<group>"; };
+		5F2CF3A61763EA4A009A4FC0 /* ADNStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNStats.h; sourceTree = "<group>"; };
+		5F2CF3A91763F167009A4FC0 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		5F2CF3AA1763F167009A4FC0 /* binocular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = binocular.png; sourceTree = "<group>"; };
+		5F2CF3AB1763F167009A4FC0 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		5F2CF3AC1763F167009A4FC0 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		5F2CF3B11763F83D009A4FC0 /* ADNTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNTopTableViewCell.h; sourceTree = "<group>"; };
+		5F2CF3B21763F83D009A4FC0 /* ADNTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNTopTableViewCell.m; sourceTree = "<group>"; };
+		5F2CF3B41763F8A9009A4FC0 /* ADNTopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNTopTableViewController.h; sourceTree = "<group>"; };
+		5F2CF3B51763F8A9009A4FC0 /* ADNTopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNTopTableViewController.m; sourceTree = "<group>"; };
+		5F2CF3B71763F9B4009A4FC0 /* ADNTopObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNTopObject.h; sourceTree = "<group>"; };
+		5F2CF3B81763F9B4009A4FC0 /* ADNTopObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNTopObject.m; sourceTree = "<group>"; };
+		5F61E56917640538005CBE87 /* ADNTopPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNTopPost.h; sourceTree = "<group>"; };
+		5F61E56A17640538005CBE87 /* ADNTopPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNTopPost.m; sourceTree = "<group>"; };
+		5F61E56C176407D9005CBE87 /* ADNTopPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNTopPostTableViewCell.h; sourceTree = "<group>"; };
+		5F61E56D176407D9005CBE87 /* ADNTopPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNTopPostTableViewCell.m; sourceTree = "<group>"; };
+		5F61E56F17640A67005CBE87 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				5F2CF3641763DD8A009A4FC0 /* Dependencies */,
-				5F2CF3471763DD1E009A4FC0 /* ADNStats */,
+				5F2CF37D1763DFA6009A4FC0 /* ADNStats */,
 				5F2CF3401763DD1E009A4FC0 /* Frameworks */,
 				5F2CF33F1763DD1E009A4FC0 /* Products */,
 			);
@@ -124,34 +159,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5F2CF3471763DD1E009A4FC0 /* ADNStats */ = {
-			isa = PBXGroup;
-			children = (
-				5F2CF3501763DD1E009A4FC0 /* ADNAppDelegate.h */,
-				5F2CF3511763DD1E009A4FC0 /* ADNAppDelegate.m */,
-				5F2CF3591763DD1E009A4FC0 /* MainStoryboard.storyboard */,
-				5F2CF35C1763DD1E009A4FC0 /* ADNViewController.h */,
-				5F2CF35D1763DD1E009A4FC0 /* ADNViewController.m */,
-				5F2CF37B1763DE61009A4FC0 /* example.json */,
-				5F2CF3481763DD1E009A4FC0 /* Supporting Files */,
-			);
-			path = ADNStats;
-			sourceTree = "<group>";
-		};
-		5F2CF3481763DD1E009A4FC0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5F2CF3491763DD1E009A4FC0 /* ADNStats-Info.plist */,
-				5F2CF34A1763DD1E009A4FC0 /* InfoPlist.strings */,
-				5F2CF34D1763DD1E009A4FC0 /* main.m */,
-				5F2CF34F1763DD1E009A4FC0 /* ADNStats-Prefix.pch */,
-				5F2CF3531763DD1E009A4FC0 /* Default.png */,
-				5F2CF3551763DD1E009A4FC0 /* Default@2x.png */,
-				5F2CF3571763DD1E009A4FC0 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		5F2CF3641763DD8A009A4FC0 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +176,112 @@
 				5F2CF3731763DD91009A4FC0 /* sbjson-iosTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5F2CF37D1763DFA6009A4FC0 /* ADNStats */ = {
+			isa = PBXGroup;
+			children = (
+				5F2CF37E1763DFA6009A4FC0 /* Classes */,
+				5F2CF3891763DFA6009A4FC0 /* Resources */,
+				5F2CF38E1763DFA6009A4FC0 /* Supporting Files */,
+			);
+			path = ADNStats;
+			sourceTree = "<group>";
+		};
+		5F2CF37E1763DFA6009A4FC0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5F2CF37F1763DFA6009A4FC0 /* Controllers */,
+				5F2CF3821763DFA6009A4FC0 /* Delegates */,
+				5F2CF3851763DFA6009A4FC0 /* Model */,
+				5F2CF3861763DFA6009A4FC0 /* Storyboards */,
+				5F2CF3881763DFA6009A4FC0 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5F2CF37F1763DFA6009A4FC0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F2CF3801763DFA6009A4FC0 /* ADNViewController.h */,
+				5F2CF3811763DFA6009A4FC0 /* ADNViewController.m */,
+				5F2CF3B41763F8A9009A4FC0 /* ADNTopTableViewController.h */,
+				5F2CF3B51763F8A9009A4FC0 /* ADNTopTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5F2CF3821763DFA6009A4FC0 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				5F2CF3831763DFA6009A4FC0 /* ADNAppDelegate.h */,
+				5F2CF3841763DFA6009A4FC0 /* ADNAppDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		5F2CF3851763DFA6009A4FC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F2CF3A61763EA4A009A4FC0 /* ADNStats.h */,
+				5F2CF39D1763DFE3009A4FC0 /* ADNStatsClient.h */,
+				5F2CF39E1763DFE3009A4FC0 /* ADNStatsClient.m */,
+				5F2CF3A01763E24F009A4FC0 /* ADNStatsSummary.h */,
+				5F2CF3A11763E24F009A4FC0 /* ADNStatsSummary.m */,
+				5F2CF3A31763EA3B009A4FC0 /* ADNStatsPanel.h */,
+				5F2CF3A41763EA3B009A4FC0 /* ADNStatsPanel.m */,
+				5F2CF3B71763F9B4009A4FC0 /* ADNTopObject.h */,
+				5F2CF3B81763F9B4009A4FC0 /* ADNTopObject.m */,
+				5F61E56917640538005CBE87 /* ADNTopPost.h */,
+				5F61E56A17640538005CBE87 /* ADNTopPost.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F2CF3861763DFA6009A4FC0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5F2CF3871763DFA6009A4FC0 /* MainStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5F2CF3881763DFA6009A4FC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F2CF3B11763F83D009A4FC0 /* ADNTopTableViewCell.h */,
+				5F2CF3B21763F83D009A4FC0 /* ADNTopTableViewCell.m */,
+				5F61E56C176407D9005CBE87 /* ADNTopPostTableViewCell.h */,
+				5F61E56D176407D9005CBE87 /* ADNTopPostTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F2CF3891763DFA6009A4FC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F61E56F17640A67005CBE87 /* avatar.png */,
+				5F2CF3A91763F167009A4FC0 /* calendar.png */,
+				5F2CF3AA1763F167009A4FC0 /* binocular.png */,
+				5F2CF3AB1763F167009A4FC0 /* share.png */,
+				5F2CF3AC1763F167009A4FC0 /* clock.png */,
+				5F2CF38A1763DFA6009A4FC0 /* Default-568h@2x.png */,
+				5F2CF38B1763DFA6009A4FC0 /* Default.png */,
+				5F2CF38C1763DFA6009A4FC0 /* Default@2x.png */,
+				5F2CF38D1763DFA6009A4FC0 /* example.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5F2CF38E1763DFA6009A4FC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F2CF38F1763DFA6009A4FC0 /* ADNStats-Info.plist */,
+				5F2CF3901763DFA6009A4FC0 /* ADNStats-Prefix.pch */,
+				5F2CF3911763DFA6009A4FC0 /* InfoPlist.strings */,
+				5F2CF3921763DFA6009A4FC0 /* main.m */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,12 +374,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F2CF34C1763DD1E009A4FC0 /* InfoPlist.strings in Resources */,
-				5F2CF3541763DD1E009A4FC0 /* Default.png in Resources */,
-				5F2CF3561763DD1E009A4FC0 /* Default@2x.png in Resources */,
-				5F2CF3581763DD1E009A4FC0 /* Default-568h@2x.png in Resources */,
-				5F2CF35B1763DD1E009A4FC0 /* MainStoryboard.storyboard in Resources */,
-				5F2CF37C1763DE61009A4FC0 /* example.json in Resources */,
+				5F2CF3951763DFA6009A4FC0 /* MainStoryboard.storyboard in Resources */,
+				5F2CF3961763DFA6009A4FC0 /* Default-568h@2x.png in Resources */,
+				5F2CF3971763DFA6009A4FC0 /* Default.png in Resources */,
+				5F2CF3981763DFA6009A4FC0 /* Default@2x.png in Resources */,
+				5F2CF3991763DFA6009A4FC0 /* example.json in Resources */,
+				5F2CF39B1763DFA6009A4FC0 /* InfoPlist.strings in Resources */,
+				5F2CF3AD1763F167009A4FC0 /* calendar.png in Resources */,
+				5F2CF3AE1763F167009A4FC0 /* binocular.png in Resources */,
+				5F2CF3AF1763F167009A4FC0 /* share.png in Resources */,
+				5F2CF3B01763F167009A4FC0 /* clock.png in Resources */,
+				5F61E57017640A67005CBE87 /* avatar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,9 +395,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F2CF34E1763DD1E009A4FC0 /* main.m in Sources */,
-				5F2CF3521763DD1E009A4FC0 /* ADNAppDelegate.m in Sources */,
-				5F2CF35E1763DD1E009A4FC0 /* ADNViewController.m in Sources */,
+				5F2CF3931763DFA6009A4FC0 /* ADNViewController.m in Sources */,
+				5F2CF3941763DFA6009A4FC0 /* ADNAppDelegate.m in Sources */,
+				5F2CF39C1763DFA6009A4FC0 /* main.m in Sources */,
+				5F2CF39F1763DFE3009A4FC0 /* ADNStatsClient.m in Sources */,
+				5F2CF3A21763E24F009A4FC0 /* ADNStatsSummary.m in Sources */,
+				5F2CF3A51763EA3B009A4FC0 /* ADNStatsPanel.m in Sources */,
+				5F2CF3B31763F83D009A4FC0 /* ADNTopTableViewCell.m in Sources */,
+				5F2CF3B61763F8A9009A4FC0 /* ADNTopTableViewController.m in Sources */,
+				5F2CF3B91763F9B5009A4FC0 /* ADNTopObject.m in Sources */,
+				5F61E56B17640538005CBE87 /* ADNTopPost.m in Sources */,
+				5F61E56E176407D9005CBE87 /* ADNTopPostTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,25 +418,6 @@
 			targetProxy = 5F2CF3741763DDA6009A4FC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5F2CF34A1763DD1E009A4FC0 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F2CF34B1763DD1E009A4FC0 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5F2CF3591763DD1E009A4FC0 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F2CF35A1763DD1E009A4FC0 /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5F2CF35F1763DD1E009A4FC0 /* Debug */ = {
@@ -373,12 +480,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ADNStats/ADNStats-Prefix.pch";
+				GCC_PREFIX_HEADER = "ADNStats/Supporting Files/ADNStats-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
 					"\"$(OBJROOT)/UninstalledProducts/include\"",
 				);
-				INFOPLIST_FILE = "ADNStats/ADNStats-Info.plist";
+				INFOPLIST_FILE = "ADNStats/Supporting Files/ADNStats-Info.plist";
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -392,12 +499,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ADNStats/ADNStats-Prefix.pch";
+				GCC_PREFIX_HEADER = "ADNStats/Supporting Files/ADNStats-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
 					"\"$(OBJROOT)/UninstalledProducts/include\"",
 				);
-				INFOPLIST_FILE = "ADNStats/ADNStats-Info.plist";
+				INFOPLIST_FILE = "ADNStats/Supporting Files/ADNStats-Info.plist";
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -426,6 +533,7 @@
 				5F2CF3631763DD1E009A4FC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

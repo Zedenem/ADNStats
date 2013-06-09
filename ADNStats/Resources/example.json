@@ -148,19 +148,19 @@
 		"top_talkers": [
 						{
 						"username": "talker1",
-						"posts": 100
+						"posts": 101
 						},
 						{
 						"username": "talker2",
-						"posts": 99
+						"posts": 90
 						},
 						{
 						"username": "talker3",
-						"posts": 88
+						"posts": 85
 						},
 						{
 						"username": "talker4",
-						"posts": 77
+						"posts": 74
 						},
 						{
 						"username": "talker5",
@@ -238,52 +238,52 @@
 					  "post": "post 5"
 					  }
 					  ],
-		"post_count": 1234,
-		"post_length": 99.9,
-		"unique_users": 555,
+		"post_count": 12340,
+		"post_length": 188.2,
+		"unique_users": 6555,
 		"sources": [
 					{
-					"id": 1,
+					"id": "1",
 					"source": "source 1",
 					"posts": 100
 					},
 					{
-					"id": 1,
+					"id": "1",
 					"source": "source 2",
 					"posts": 99
 					},
 					{
-					"id": 1,
+					"id": "1",
 					"source": "source 3",
 					"posts": 98
 					},
 					{
-					"id": 1,
+					"id": "1",
 					"source": "source 4",
 					"posts": 97
 					},
 					{
-					"id": 1,
+					"id": "1",
 					"source": "source 5",
 					"posts": 96
 					},
 					{
-					"id": 1,
+					"id": "1",
 					"source": "source 6",
 					"posts": 95
 					},
 					{
-					"id": 1,
+					"id": "1",
 					"source": "source 7",
 					"posts": 94
 					},
 					{
-					"id": 1,
+					"id": "1",
 					"source": "source 8",
 					"posts": 93
 					},
 					{
-					"id": 1,
+					"id": "1",
 					"source": "source 9",
 					"posts": 92
 					}
