@@ -16,5 +16,6 @@
 
 #pragma mark Instantiation
 - (id)initWithJsonDictionary:(NSDictionary *)jsonDictionary;
+- (id)initWithTitle:(NSString *)title number:(NSUInteger)number;
 
 @end

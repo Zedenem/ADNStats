@@ -8,10 +8,19 @@
 
 #import "ADNViewController.h"
 
+// Frameworks
+#import <AppDotNet/AppDotNet.h>
+
+// Controllers
+#import "ADNAuthenticationViewController.h"
+
 // Model
 #import "ADNStats.h"
 
-@interface ADNViewController ()
+// Constants
+#define ADNAccessToken @"ADNAccessToken"
+
+@interface ADNViewController () <ADNAuthenticationViewControllerDelegate>
 
 #pragma mark Datas management
 @property (strong, nonatomic) ADNStatsSummary *statsSummary;
@@ -34,6 +43,7 @@
 @property (weak, nonatomic) IBOutlet UIView *loadingView;
 @property (weak, nonatomic) IBOutlet UILabel *loadingLabel;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingActivityIndicator;
+@property (weak, nonatomic) IBOutlet UIView *loginButton;
 
 
 @end
@@ -43,13 +53,13 @@
 #pragma mark View Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	[[ADNClient sharedClient] setAccessToken:[[NSUserDefaults standardUserDefaults] objectForKey:ADNAccessToken]];
 	[self refreshStats];
 }
 
 #pragma mark Datas management
 - (IBAction)refreshStats {
-	[self.loadingActivityIndicator startAnimating];
-	[self.loadingLabel setText:NSLocalizedString(@"Loading App.Net stats...", nil)];
 	if (!self.loadingView.superview) {
 		[self.view addSubview:self.loadingView];
 	}
@@ -57,24 +67,33 @@
 		[self.loadingView.superview bringSubviewToFront:self.loadingView];
 	}
 	[self.loadingView setAlpha:1.0];
-	[[ADNStatsClient sharedClient] getStatsWithCompletionHandler:^(ADNStatsSummary *statsSummary, NSError *error) {
-		if (statsSummary) {
-			[self setStatsSummary:statsSummary];
-			[self reloadData];
-			[UIView animateWithDuration:0.2
-							 animations:^{
-								 [self.loadingView setAlpha:0.0];
-							 }
-							 completion:^(BOOL finished) {
-								 [self.loadingActivityIndicator stopAnimating];
-								 [self.loadingView.superview sendSubviewToBack:self.loadingView];
-							 }];
-		}
-		else {
-			[self.loadingActivityIndicator stopAnimating];
-			[self.loadingLabel setText:NSLocalizedString(@"An Error Occurred", nil)];
-		}
-	}];
+	if (![ADNClient sharedClient].accessToken) {
+		[self.loginButton setAlpha:1.0];
+		[self.loadingLabel setText:NSLocalizedString(@"You must be logged in", nil)];
+	}
+	else {
+		[self.loginButton setAlpha:0.0];
+		[self.loadingActivityIndicator startAnimating];
+		[self.loadingLabel setText:NSLocalizedString(@"Loading App.Net stats...", nil)];
+		[[ADNStatsClient sharedClient] getStatsWithCompletionHandler:^(ADNStatsSummary *statsSummary, NSError *error) {
+			if (statsSummary) {
+				[self setStatsSummary:statsSummary];
+				[self reloadData];
+				[UIView animateWithDuration:0.2
+								 animations:^{
+									 [self.loadingView setAlpha:0.0];
+								 }
+								 completion:^(BOOL finished) {
+									 [self.loadingActivityIndicator stopAnimating];
+									 [self.loadingView.superview sendSubviewToBack:self.loadingView];
+								 }];
+			}
+			else {
+				[self.loadingActivityIndicator stopAnimating];
+				[self.loadingLabel setText:NSLocalizedString(@"An Error Occurred", nil)];
+			}
+		}];
+	}
 }
 
 #pragma mark Datas display UI
@@ -90,6 +109,29 @@
 	[self.numberOfUsersLastDayLabel setText:[NSString stringWithFormat:@"%d", self.statsSummary.lastdayStatsPanel.numberOfUniqueUsers]];
 	[self.averageMessageLengthLastDayLabel setText:[NSString stringWithFormat:@"%.1f", self.statsSummary.lastdayStatsPanel.averageMessageLength]];
 	[self.averageMessageLengthLastDayProgressView setProgress:self.statsSummary.lastdayStatsPanel.averageMessageLength/kMaximumMessageLength animated:YES];
+}
+
+#pragma mark Segue Management
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	if ([segue.identifier isEqualToString:@"showAuthenticationSegue"]) {
+		UINavigationController *navigationController = segue.destinationViewController;
+		ADNAuthenticationViewController *authenticationViewController = ((ADNAuthenticationViewController *)navigationController.visibleViewController);
+		[authenticationViewController setDelegate:self];
+	}
+}
+
+#pragma mark ADNAuthenticationViewControllerDelegate methods
+- (void)authenticationViewController:(ADNAuthenticationViewController *)authenticationViewController didFail:(NSError *)error {
+	if (error) {
+		[[[UIAlertView alloc] initWithTitle:error.localizedFailureReason message:error.localizedDescription delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+	}
+	[authenticationViewController dismissViewControllerAnimated:YES completion:^{}];
+}
+- (void)authenticationViewController:(ADNAuthenticationViewController *)authenticationViewController didAuthenticate:(NSString *)accessToken {
+	[authenticationViewController dismissViewControllerAnimated:YES completion:^{}];
+	[[ADNClient sharedClient] setAccessToken:accessToken];
+	[[NSUserDefaults standardUserDefaults] setObject:accessToken forKey:ADNAccessToken];
+	[self refreshStats];
 }
 
 @end

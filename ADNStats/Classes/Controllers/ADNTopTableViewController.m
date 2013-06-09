@@ -8,9 +8,13 @@
 
 #import "ADNTopTableViewController.h"
 
+// Frameworks
+#import <AppDotNet/AppDotNet.h>
+
 // Views
 #import "ADNTopTableViewCell.h"
 #import "ADNTopPostTableViewCell.h"
+#import "XYPieChart.h"
 
 // Constants
 #define kTopTalkersSection 0
@@ -18,7 +22,16 @@
 #define kTopHashtagsSection 2
 #define kTopPostsSection 3
 
-@interface ADNTopTableViewController ()
+// Utilities
+
+#define RGBColor(x, y, z) [UIColor colorWithRed:x/255.0 green:y/255.0 blue:z/255.0 alpha:1.0]
+
+@interface ADNTopTableViewController () <XYPieChartDataSource, XYPieChartDelegate>
+
+@property (weak, nonatomic) IBOutlet XYPieChart *sourcesPieChart;
+@property (weak, nonatomic) IBOutlet UILabel *selectedSliceLabel;
+@property (strong, nonatomic) NSArray *sliceColors;
+
 
 @end
 
@@ -36,6 +49,30 @@
 	else {
 		[self setStatsPanel:[ADNStatsClient sharedClient].statsSummary.lastdayStatsPanel];
 	}
+	
+	[self refreshAvatars];
+	
+    [self.sourcesPieChart setDataSource:self];
+	[self.sourcesPieChart setDelegate:self];
+    [self.sourcesPieChart setStartPieAngle:M_PI_2];
+    [self.sourcesPieChart setAnimationSpeed:1.0];
+    [self.sourcesPieChart setLabelFont:[UIFont boldSystemFontOfSize:14.0]];
+    [self.sourcesPieChart setLabelRadius:100.0];
+    [self.sourcesPieChart setPieBackgroundColor:[UIColor blackColor]];
+    [self.sourcesPieChart setLabelShadowColor:[UIColor blackColor]];
+	[self.sourcesPieChart setShowPercentage:NO];
+	[self.sourcesPieChart setShowLabel:YES];
+	
+    self.sliceColors = [NSArray arrayWithObjects:
+						RGBColor(173.0, 217.0, 230.0),
+						RGBColor(89.0, 189.0, 231.0),
+						RGBColor(0.0, 165.0, 224.0),
+						RGBColor(2.0, 123.0, 206.0),
+						RGBColor(2.0, 101.0, 153.0),
+						RGBColor(0.0, 74.0, 106.0),
+						nil];
+	
+	[self.sourcesPieChart reloadData];
 }
 - (void)viewDidUnload {
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:ADNStatsClientGetStatsNotification object:nil];
@@ -53,6 +90,19 @@
 		[self setStatsPanel:statsSummary.lastdayStatsPanel];
 	}
 	[self.tableView reloadData];
+	[self.sourcesPieChart reloadData];
+	[self refreshAvatars];
+}
+- (void)refreshAvatars {
+	if (self.statsPanel && [ADNClient sharedClient].accessToken) {
+		for (int i = 0; i < [self.statsPanel numberOfTopPosts]; i++) {
+			[[ADNClient sharedClient] getAvatarImageForUser:[self.statsPanel topPostAtIndex:i].username
+									  withCompletionHandler:^(UIImage *image, ADNMetadata *meta, NSError *error) {
+										  [[self.statsPanel topPostAtIndex:i] setAvatarImage:image];
+										  [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:i inSection:kTopPostsSection]] withRowAnimation:UITableViewRowAnimationAutomatic];
+									  }];
+		}
+	}
 }
 
 #pragma mark - Table view data source
@@ -137,7 +187,12 @@
 		
 		[topPostTableViewCell.usernameLabel setText:topPost.username];
 		[topPostTableViewCell.postLabel setText:topPost.postDescription];
-		[topPostTableViewCell.avatarImageView setImage:[UIImage imageNamed:@"avatar.png"]];
+		if (topPost.avatarImage) {
+			[topPostTableViewCell.avatarImageView setImage:topPost.avatarImage];
+		}
+		else {
+			[topPostTableViewCell.avatarImageView setImage:[UIImage imageNamed:@"avatar.png"]];
+		}
 		
 		cell = topPostTableViewCell;
 	}
@@ -160,6 +215,28 @@
 	return headerView;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+}
+
+#pragma mark Pie chart data source
+- (NSUInteger)numberOfSlicesInPieChart:(XYPieChart *)pieChart {
+    return [self.statsPanel numberOfSources];
+}
+- (CGFloat)pieChart:(XYPieChart *)pieChart valueForSliceAtIndex:(NSUInteger)index {
+    return ((CGFloat)[self.statsPanel sourceAtIndex:index].numberOfPosts) / ((CGFloat)self.statsPanel.numberOfPosts);
+}
+- (NSString *)pieChart:(XYPieChart *)pieChart textForSliceAtIndex:(NSUInteger)index {
+    return [NSString stringWithFormat:@"%@ (%d)", [self.statsPanel sourceAtIndex:index].sourcename, [self.statsPanel sourceAtIndex:index].numberOfPosts];
+}
+- (UIColor *)pieChart:(XYPieChart *)pieChart colorForSliceAtIndex:(NSUInteger)index {
+    return [self.sliceColors objectAtIndex:(index % self.sliceColors.count)];
+}
+
+#pragma mark Pie chart delegate
+- (void)pieChart:(XYPieChart *)pieChart didSelectSliceAtIndex:(NSUInteger)index {
+	[self.selectedSliceLabel setText:[pieChart.dataSource pieChart:pieChart textForSliceAtIndex:index]];
+}
+- (void)pieChart:(XYPieChart *)pieChart willDeselectSliceAtIndex:(NSUInteger)index {
+	[self.selectedSliceLabel setText:nil];
 }
 
 @end

@@ -13,6 +13,7 @@
 #pragma mark Properties
 @property (strong, nonatomic, readonly) NSNumber *identifier;
 @property (strong, nonatomic, readonly) NSString *username;
+@property (strong, nonatomic) UIImage *avatarImage;
 @property (strong, nonatomic, readonly) NSString *postDescription;
 
 @end

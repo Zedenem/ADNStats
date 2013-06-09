@@ -10,6 +10,7 @@
 
 @class ADNTopObject;
 @class ADNTopPost;
+@class ADNTopSource;
 
 @interface ADNStatsPanel : NSObject
 
@@ -31,5 +32,9 @@
 - (ADNTopObject *)topHashtagAtIndex:(NSUInteger)index;
 - (NSUInteger)numberOfTopPosts;
 - (ADNTopPost *)topPostAtIndex:(NSUInteger)index;
+
+#pragma mark Access Sources
+- (NSUInteger)numberOfSources;
+- (ADNTopSource *)sourceAtIndex:(NSUInteger)index;
 
 @end

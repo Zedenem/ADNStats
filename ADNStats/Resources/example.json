@@ -69,7 +69,7 @@
 		"top_posts": [
 					  {
 					  "id": 1,
-					  "username": "user1",
+					  "username": "@zedenem",
 					  "post": "post 1"
 					  },
 					  {
@@ -245,7 +245,7 @@
 					{
 					"id": "1",
 					"source": "source 1",
-					"posts": 100
+					"posts": 8000
 					},
 					{
 					"id": "1",

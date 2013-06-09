@@ -33,6 +33,16 @@
 		5F61E56B17640538005CBE87 /* ADNTopPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61E56A17640538005CBE87 /* ADNTopPost.m */; };
 		5F61E56E176407D9005CBE87 /* ADNTopPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61E56D176407D9005CBE87 /* ADNTopPostTableViewCell.m */; };
 		5F61E57017640A67005CBE87 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F61E56F17640A67005CBE87 /* avatar.png */; };
+		5F61E58217640CF0005CBE87 /* libAppDotNet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F61E57B17640CDD005CBE87 /* libAppDotNet.a */; };
+		5F61E58417640CFE005CBE87 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F61E58317640CFE005CBE87 /* CoreLocation.framework */; };
+		5F61E58617640D04005CBE87 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F61E58517640D04005CBE87 /* SystemConfiguration.framework */; };
+		5F61E58817640D14005CBE87 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F61E58717640D14005CBE87 /* MobileCoreServices.framework */; };
+		5F61E58B17640E43005CBE87 /* ADNAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61E58A17640E43005CBE87 /* ADNAuthenticationViewController.m */; };
+		5F61E59117641A72005CBE87 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F61E58D17641A72005CBE87 /* LICENSE.txt */; };
+		5F61E59217641A72005CBE87 /* README.textile in Resources */ = {isa = PBXBuildFile; fileRef = 5F61E58E17641A72005CBE87 /* README.textile */; };
+		5F61E59317641A72005CBE87 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61E59017641A72005CBE87 /* XYPieChart.m */; };
+		5F61E59517641BD0005CBE87 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F61E59417641BD0005CBE87 /* QuartzCore.framework */; };
+		5F61E59817642447005CBE87 /* ADNTopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61E59717642447005CBE87 /* ADNTopSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +80,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = BC12323C1391D5CC00131607;
 			remoteInfo = SBJson;
+		};
+		5F61E57A17640CDD005CBE87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F61E57117640CDC005CBE87 /* AppDotNet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8CED1A6C167C5FC80071D908;
+			remoteInfo = AppDotNet;
+		};
+		5F61E57C17640CDD005CBE87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F61E57117640CDC005CBE87 /* AppDotNet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8CED1A7D167C5FC90071D908;
+			remoteInfo = AppDotNetTests;
+		};
+		5F61E57E17640CDD005CBE87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F61E57117640CDC005CBE87 /* AppDotNet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5DC3712216E08AE300190862;
+			remoteInfo = "AppDotNet-OSX";
+		};
+		5F61E58017640CEA005CBE87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F61E57117640CDC005CBE87 /* AppDotNet.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CED1A6B167C5FC80071D908;
+			remoteInfo = AppDotNet;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -114,6 +152,19 @@
 		5F61E56C176407D9005CBE87 /* ADNTopPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNTopPostTableViewCell.h; sourceTree = "<group>"; };
 		5F61E56D176407D9005CBE87 /* ADNTopPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNTopPostTableViewCell.m; sourceTree = "<group>"; };
 		5F61E56F17640A67005CBE87 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		5F61E57117640CDC005CBE87 /* AppDotNet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppDotNet.xcodeproj; path = dependencies/AppDotNet/AppDotNet.xcodeproj; sourceTree = "<group>"; };
+		5F61E58317640CFE005CBE87 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5F61E58517640D04005CBE87 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5F61E58717640D14005CBE87 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5F61E58917640E43005CBE87 /* ADNAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNAuthenticationViewController.h; sourceTree = "<group>"; };
+		5F61E58A17640E43005CBE87 /* ADNAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNAuthenticationViewController.m; sourceTree = "<group>"; };
+		5F61E58D17641A72005CBE87 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		5F61E58E17641A72005CBE87 /* README.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.textile; sourceTree = "<group>"; };
+		5F61E58F17641A72005CBE87 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		5F61E59017641A72005CBE87 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		5F61E59417641BD0005CBE87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5F61E59617642446005CBE87 /* ADNTopSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNTopSource.h; sourceTree = "<group>"; };
+		5F61E59717642447005CBE87 /* ADNTopSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNTopSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +172,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F61E59517641BD0005CBE87 /* QuartzCore.framework in Frameworks */,
+				5F61E58817640D14005CBE87 /* MobileCoreServices.framework in Frameworks */,
+				5F61E58617640D04005CBE87 /* SystemConfiguration.framework in Frameworks */,
+				5F61E58417640CFE005CBE87 /* CoreLocation.framework in Frameworks */,
+				5F61E58217640CF0005CBE87 /* libAppDotNet.a in Frameworks */,
 				5F2CF3761763DDAC009A4FC0 /* libsbjson-ios.a in Frameworks */,
 				5F2CF3421763DD1E009A4FC0 /* UIKit.framework in Frameworks */,
 				5F2CF3441763DD1E009A4FC0 /* Foundation.framework in Frameworks */,
@@ -152,6 +208,10 @@
 		5F2CF3401763DD1E009A4FC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F61E59417641BD0005CBE87 /* QuartzCore.framework */,
+				5F61E58717640D14005CBE87 /* MobileCoreServices.framework */,
+				5F61E58517640D04005CBE87 /* SystemConfiguration.framework */,
+				5F61E58317640CFE005CBE87 /* CoreLocation.framework */,
 				5F2CF3411763DD1E009A4FC0 /* UIKit.framework */,
 				5F2CF3431763DD1E009A4FC0 /* Foundation.framework */,
 				5F2CF3451763DD1E009A4FC0 /* CoreGraphics.framework */,
@@ -162,6 +222,8 @@
 		5F2CF3641763DD8A009A4FC0 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				5F61E58C17641A72005CBE87 /* XYPieChart */,
+				5F61E57117640CDC005CBE87 /* AppDotNet.xcodeproj */,
 				5F2CF3651763DD91009A4FC0 /* SBJson.xcodeproj */,
 			);
 			name = Dependencies;
@@ -207,6 +269,8 @@
 				5F2CF3811763DFA6009A4FC0 /* ADNViewController.m */,
 				5F2CF3B41763F8A9009A4FC0 /* ADNTopTableViewController.h */,
 				5F2CF3B51763F8A9009A4FC0 /* ADNTopTableViewController.m */,
+				5F61E58917640E43005CBE87 /* ADNAuthenticationViewController.h */,
+				5F61E58A17640E43005CBE87 /* ADNAuthenticationViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -234,6 +298,8 @@
 				5F2CF3B81763F9B4009A4FC0 /* ADNTopObject.m */,
 				5F61E56917640538005CBE87 /* ADNTopPost.h */,
 				5F61E56A17640538005CBE87 /* ADNTopPost.m */,
+				5F61E59617642446005CBE87 /* ADNTopSource.h */,
+				5F61E59717642447005CBE87 /* ADNTopSource.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,6 +350,28 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5F61E57217640CDC005CBE87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F61E57B17640CDD005CBE87 /* libAppDotNet.a */,
+				5F61E57D17640CDD005CBE87 /* AppDotNetTests.octest */,
+				5F61E57F17640CDD005CBE87 /* AppDotNet-OSX.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F61E58C17641A72005CBE87 /* XYPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				5F61E58D17641A72005CBE87 /* LICENSE.txt */,
+				5F61E58E17641A72005CBE87 /* README.textile */,
+				5F61E58F17641A72005CBE87 /* XYPieChart.h */,
+				5F61E59017641A72005CBE87 /* XYPieChart.m */,
+			);
+			name = XYPieChart;
+			path = dependencies/XYPieChart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,6 +386,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5F61E58117640CEA005CBE87 /* PBXTargetDependency */,
 				5F2CF3751763DDA6009A4FC0 /* PBXTargetDependency */,
 			);
 			name = ADNStats;
@@ -326,6 +415,10 @@
 			productRefGroup = 5F2CF33F1763DD1E009A4FC0 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 5F61E57217640CDC005CBE87 /* Products */;
+					ProjectRef = 5F61E57117640CDC005CBE87 /* AppDotNet.xcodeproj */;
+				},
 				{
 					ProductGroup = 5F2CF3661763DD91009A4FC0 /* Products */;
 					ProjectRef = 5F2CF3651763DD91009A4FC0 /* SBJson.xcodeproj */;
@@ -367,6 +460,27 @@
 			remoteRef = 5F2CF3721763DD91009A4FC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		5F61E57B17640CDD005CBE87 /* libAppDotNet.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppDotNet.a;
+			remoteRef = 5F61E57A17640CDD005CBE87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F61E57D17640CDD005CBE87 /* AppDotNetTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AppDotNetTests.octest;
+			remoteRef = 5F61E57C17640CDD005CBE87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F61E57F17640CDD005CBE87 /* AppDotNet-OSX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "AppDotNet-OSX.framework";
+			remoteRef = 5F61E57E17640CDD005CBE87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -385,6 +499,8 @@
 				5F2CF3AF1763F167009A4FC0 /* share.png in Resources */,
 				5F2CF3B01763F167009A4FC0 /* clock.png in Resources */,
 				5F61E57017640A67005CBE87 /* avatar.png in Resources */,
+				5F61E59117641A72005CBE87 /* LICENSE.txt in Resources */,
+				5F61E59217641A72005CBE87 /* README.textile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +522,9 @@
 				5F2CF3B91763F9B5009A4FC0 /* ADNTopObject.m in Sources */,
 				5F61E56B17640538005CBE87 /* ADNTopPost.m in Sources */,
 				5F61E56E176407D9005CBE87 /* ADNTopPostTableViewCell.m in Sources */,
+				5F61E58B17640E43005CBE87 /* ADNAuthenticationViewController.m in Sources */,
+				5F61E59317641A72005CBE87 /* XYPieChart.m in Sources */,
+				5F61E59817642447005CBE87 /* ADNTopSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +535,11 @@
 			isa = PBXTargetDependency;
 			name = SBJson;
 			targetProxy = 5F2CF3741763DDA6009A4FC0 /* PBXContainerItemProxy */;
+		};
+		5F61E58117640CEA005CBE87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppDotNet;
+			targetProxy = 5F61E58017640CEA005CBE87 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

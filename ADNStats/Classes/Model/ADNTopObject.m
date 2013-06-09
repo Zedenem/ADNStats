@@ -32,5 +32,13 @@
 	}
 	return self;
 }
+- (id)initWithTitle:(NSString *)title number:(NSUInteger)number {
+	self = [self init];
+	if (self) {
+		self.title = title;
+		self.number = number;
+	}
+	return self;
+}
 
 @end

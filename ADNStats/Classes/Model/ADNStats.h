@@ -12,5 +12,6 @@
 #import "ADNStatsPanel.h"
 #import "ADNTopObject.h"
 #import "ADNTopPost.h"
+#import "ADNTopSource.h"
 
 #define kMaximumMessageLength 256.0

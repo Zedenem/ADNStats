@@ -1,3 +1,6 @@
 [submodule "dependencies/json"]
 	path = dependencies/json
 	url = https://github.com/stig/json-framework.git
+[submodule "dependencies/AppDotNet"]
+	path = dependencies/AppDotNet
+	url = https://github.com/mattrubin/AppDotNet.git

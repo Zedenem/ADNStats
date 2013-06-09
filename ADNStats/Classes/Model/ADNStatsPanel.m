@@ -11,6 +11,7 @@
 // Model
 #import "ADNTopObject.h"
 #import "ADNTopPost.h"
+#import "ADNTopSource.h"
 
 @interface ADNStatsPanel ()
 
@@ -91,6 +92,22 @@
 			}
 			self.topPosts = [NSArray arrayWithArray:mutableTopPosts];
 		}
+		
+		NSUInteger numberOfUnknownSourcesPosts = self.numberOfPosts;
+		NSArray *sources = [jsonDictionary objectForKey:@"sources"];
+		if (sources) {
+			NSMutableArray *mutableTopSources = [NSMutableArray arrayWithCapacity:[sources count]];
+			for (NSDictionary *sourceDictionary in sources) {
+				ADNTopSource *source = [[ADNTopSource alloc] initWithJsonDictionary:sourceDictionary];
+				numberOfUnknownSourcesPosts -= source.numberOfPosts;
+				[mutableTopSources addObject:source];
+			}
+			self.sources = [NSArray arrayWithArray:mutableTopSources];
+		}
+		if (numberOfUnknownSourcesPosts > 0) {
+			ADNTopSource *source = [[ADNTopSource alloc] initWithSourcename:NSLocalizedString(@"Other", nil) numberOfPosts:numberOfUnknownSourcesPosts];
+			self.sources = [self.sources arrayByAddingObject:source];
+		}
 	}
 	return self;
 }
@@ -119,6 +136,14 @@
 }
 - (ADNTopPost *)topPostAtIndex:(NSUInteger)index {
 	return [self.topPosts objectAtIndex:index];
+}
+
+#pragma mark Access Sources
+- (NSUInteger)numberOfSources {
+	return [self.sources count];
+}
+- (ADNTopSource *)sourceAtIndex:(NSUInteger)index {
+	return [self.sources objectAtIndex:index];
 }
 
 @end
